@@ -1,0 +1,50 @@
+.flag {
+
+    height: 150px;
+    width: 100%;
+}
+
+body {
+    background-color: rgb(239 195 195 / 98%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.flag-container {
+    background-color: white;
+    width: 250px;
+    /* margin: 0.3rem; */
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: gray;
+    box-shadow: violet;
+}
+
+.details {
+    padding: 10px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* gap: 40px; */
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+@media (min-width:300px) {
+    section {
+        grid-template-columns: repeat(1fr);
+    }
+}
+
+@media (min-width:450px) {
+    section {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (min-width:630px) {
+    section {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
